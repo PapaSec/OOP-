@@ -16,12 +16,12 @@ class Car {
     
     public function startEngine() {
         $this->isRunning = true;
-        return "🚗 {$this->brand} {$this->model} engine started! <br>";
+        return "{$this->brand} {$this->model} engine started! <br>";
     }
     
     public function stopEngine() {
         $this->isRunning = false;
-        return "🔴 {$this->brand} {$this->model} engine stopped! <br>";
+        return "{$this->brand} {$this->model} engine stopped! <br>";
     }
     
     public function getCarInfo() {
@@ -48,4 +48,3 @@ echo "Status: " . $car1->checkStatus() . "<br><br>";
 echo $car2->getCarInfo() . "<br>";
 echo $car2->startEngine() . "<br>";
 echo "Status: " . $car2->checkStatus() . "<br>";
-?>

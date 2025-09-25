@@ -3,8 +3,6 @@
 /*Practice Exercise 1: Create a Student class with properties: name, age, grade. Include methods to display student info and
  check if they passed (grade >= 60).*/
 
-
-
     Class Student {
       // Properties (attributes)
       public $name;
@@ -43,5 +41,3 @@
     echo "Student 2 Information:<br>";
     $student2->displayStudentInfo();
     echo "Passed: " . ($student2->hasPassed() ? "Yes" : "No") . "<br>";
-
-?>
