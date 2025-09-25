@@ -2,7 +2,7 @@
 
 /*Practice Exercise 1: Create a Student class with properties: name, age, grade. Include methods to display student info and
  check if they passed (grade >= 60).*/
- 
+
 
 
     Class Student {
