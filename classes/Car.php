@@ -1,38 +1,43 @@
 <?php
-class Car {
+class Car
+{
     public $brand;
     public $model;
     public $year;
     public $color;
     private $isRunning;
-    
-    public function __construct($brand, $model, $year, $color) {
+
+    public function __construct($brand, $model, $year, $color)
+    {
         $this->brand = $brand;
         $this->model = $model;
         $this->year = $year;
         $this->color = $color;
         $this->isRunning = false;
     }
-    
-    public function startEngine() {
+
+    public function startEngine()
+    {
         $this->isRunning = true;
-        return "{$this->brand} {$this->model} engine started! <br>";
+        return "{$this->brand} {$this->model} engine started!";
     }
-    
-    public function stopEngine() {
+
+    public function stopEngine()
+    {
         $this->isRunning = false;
-        return "{$this->brand} {$this->model} engine stopped! <br>";
+        return "{$this->brand} {$this->model} engine stopped!";
     }
-    
-    public function getCarInfo() {
-        return "{$this->year} {$this->brand} {$this->model} - Color: {$this->color} <br>";
+
+    public function getCarInfo()
+    {
+        return "{$this->year} {$this->brand} {$this->model} - Color: {$this->color}";
     }
-    
-    public function checkStatus() {
-        return $this->isRunning ? "Engine is RUNNING" : "Engine is OFF <br>";
+
+    public function checkStatus()
+    {
+        return $this->isRunning ? "Engine is RUNNING" : "Engine is OFF";
     }
 }
-
 // Demonstration
 echo "<h3>Car Class Demo</h3>";
 
